@@ -7,5 +7,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  fontFamily: {
+    quicksand: ['"Quicksand"']
+  },
   plugins: [require("daisyui")],
 }
