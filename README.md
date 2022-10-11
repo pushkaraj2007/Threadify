@@ -18,6 +18,7 @@ Check out the website: [Threadify](https://threadify.vercel.app)
 Before installation, please make sure you have already installed the following tools:
 
 - [Git](https://git-scm.com/downloads)
+- [NodeJs](https://nodejs.org/en/download/)
 
 ## 🛠️ Installation Steps
 
