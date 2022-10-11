@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Threadify
 
-## Getting Started
+Threadify helps you to manage and showcase all of your twitter threads at one place, with the simplicity and security.
 
-First, run the development server:
+![Screenshot of the home page](https://github.com/pushkaraj2007/Threadify/blob/main/public/Threadify.png)
+
+## Languages/Tools
+
+<a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
+<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="TailwindCSS" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
+
+## 👩🏽‍💻 Demo
+
+Check out the website: [Threadify](https://threadify.vercel.app)
+
+## 👇🏽 Prerequisites
+
+Before installation, please make sure you have already installed the following tools:
+
+- [Git](https://git-scm.com/downloads)
+
+## 🛠️ Installation Steps
+
+- [Fork](https://github.com/pushkaraj2007/Threadify/fork) the project. Click on the <a href="https://github.com/pushkaraj2007/Threadiify/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started.
+
+- Use these commands in your git bash to make a clone of the project in your pc.
+
+### SSH [Github Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone git@github.com:username/Threadify
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### GitHub CLI
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+$ gh repo clone username/Threadify
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### HTTPS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+$ git clone https://github.com/username/Threadify
+```
 
-## Learn More
+- Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+cd Threadify
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛡️ License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Threadify is licensed under the MIT License - see the [LICENSE](Licence) file for details.
 
-## Deploy on Vercel
+## 💪🏽 Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thank you so much all for spending your time to improve Threadify. Keep shining ⭐
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Contributors](https://contrib.rocks/image?repo=pushkaraj2007/Threadify)](https://github.com/pushkaraj2007/Threadify/graphs/contributors)
+
+## 🙏🏽 Support
+
+This project needs a star️ from you. Don't forget to leave a star 🌟
