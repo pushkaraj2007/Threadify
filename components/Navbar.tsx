@@ -13,7 +13,7 @@ const Navbar: NextPage = () => {
         <header className="text-gray-600 body-font">
             <div className="container mx-auto justify-between flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a className="flex title-font font-medium items-center dark:text-gray-300 text-gray-900 mb-4 md:mb-0">
-                    <Image width="20px" height="20px" src="/logo.svg" className="h-12" alt="" />
+                    <Image width="40px" height="40px" src="/logo.svg" className="h-12 filter dark:invert" alt="" />
                     <span className="ml-3 text-xl">Threadify</span>
                 </a>
                 <div className="flex">
