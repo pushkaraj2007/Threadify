@@ -9,7 +9,7 @@ import Meta from '../components/Meta';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div className='px-8 dark:bg-gray-900 bg-gray-100'>
       <Meta title='Threadify' />
       <main>
         <Navbar />
