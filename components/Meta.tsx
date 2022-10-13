@@ -11,7 +11,7 @@ const Meta = ({title = "Threadify",description = "Threadify helps you to manage 
         <Head>
             <title>{title}</title>
             <meta name="description" content={description} />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/threadify-logo.png" />
         </Head>
     )
 }
