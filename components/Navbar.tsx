@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import {useTheme} from "next-themes"
+import {FaMoon , FaSun} from "react-icons/fa"
 
 const Navbar: NextPage = () => {
     const {theme, setTheme} = useTheme()
@@ -17,7 +18,7 @@ const Navbar: NextPage = () => {
                     <span className="ml-3 text-xl">Threadify</span>
                 </a>
                 <div className="flex">
-                    <button className="mr-7" onClick={toggleTheme}>Toggle</button>
+                    <button className="mr-7" onClick={toggleTheme}> {theme === "light" ? <FaMoon className="text-gray-900 text-xl" /> : <FaSun className="text-gray-300 text-xl" />}</button>
                     <button className="bg-blue-500 flex items-center transition-all hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login with Twitter
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                             <path d="M5 12h14M12 5l7 7-7 7"></path>
