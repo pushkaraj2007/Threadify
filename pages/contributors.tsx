@@ -29,7 +29,7 @@ const ContributorsPage = ({contributors,temp} : ContributorsPageProps)=>{
 
 export const getStaticProps = async()=>{
     const githubUser = process.env.GITHUB_USER
-    const githubApiKey = "" //process.env.GITHUB_API_KEY
+    const githubApiKey = process.env.GITHUB_API_KEY
     
     let data = null
     const res = await fetch(`https://api.github.com/repos/${githubUser}/Supabase-Tutorial/collaborators`,{headers:{"Accept":"Accept: application/vnd.github+json","Authorization":`Bearer ${githubApiKey}`}})
