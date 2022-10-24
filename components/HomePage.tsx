@@ -1,88 +1,82 @@
 import { NextPage } from "next";
+import Image from "next/image";
+const threadifyFeatures = [
+    {
+        id: 1,
+        icon: "https://api.iconify.design/tabler:activity-heartbeat.svg?color=%233f51b5",
+        feature: "Evergreen Threads",
+        desc: "By saving your threads on Threadify, you can make them evergreen and easy to access at any time."
+    },
 
+    {
+        id: 2,
+        icon: "https://api.iconify.design/ph:scissors-bold.svg?color=%233f51b5",
+        feature: "Manage Threads",
+        desc: "Threadify helps you manage your threads easily with its super useful features thus enhancing your User Experience."
+    },
+
+    {
+        id: 3,
+        icon: "https://api.iconify.design/tabler:user.svg?color=%233f51b5",
+        feature: "Customizable Profile",
+        desc: "Make your profile more professional by including information about yourself and linking your social profiles."
+    },
+
+    {
+        id: 4,
+        icon: "https://api.iconify.design/ph:flag.svg?color=%233f51b5",
+        feature: "Open Sourced",
+        desc: "Threadify is open-sourced and comes under the MIT license, so you can contribute and improve it too."
+    },
+
+    {
+        id: 5,
+        icon: "https://api.iconify.design/ph:moon.svg?color=%233f51b5",
+        feature: "Themeable",
+        desc: "Multiple themes are available for customizing your profile, thus enhancing the User Experience of your audience."
+    },
+
+    {
+        id: 6,
+        icon: "https://api.iconify.design/bi:shield.svg?color=%233f51b5",
+        feature: "Secure",
+        desc: "Threadify believes security is a priority. That is why we never share your personal details with anyone else."
+    }
+]
 const HomePage: NextPage = () => {
     return (
         <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
-                <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+            <div className="container px-5 pt-14 mx-auto">
+                <div className="flex flex-wrap w-full mb-6 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 dark:text-gray-200 text-gray-900">Never Lose Your Twitter Thread Again!</h1>
                     <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">Threadify helps you to manage and showcase all of your twitter threads at one place, with the simplicity and security.</p>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
+                <div className="flex justify-center items-center flex-wrap">
+                    {threadifyFeatures.map(attribute => {
+                        const { id, icon, feature, desc } = attribute;
+                        return (
+                            <div key={id}>
+                                <div className="mx-4 my-8 h-48 w-64 md:w-72">
+                                    <div className="text-center border dark:border-gray-600 border-gray-200 p-4 rounded-lg md:text-start">
+                                        <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                                            <Image src={icon} alt="icon" height={25} width={25} />
+                                        </div>
+                                        <div>
+                                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">{feature}</h2>
+                                            <p className="dark:text-gray-500 leading-relaxed text-base">{desc}</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Evergreen Threads</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">By saving your threads on Threadify, you can make them evergreen.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <circle cx="6" cy="6" r="3"></circle>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Manage Threads</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">Threadify helps you to manage your threads easily with its super useful features.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Customizable Profile</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">You can customize your profile professionally by adding a bit about yourself and linking your social profiles.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Open Sourced</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">Threadify is open sourced and comes under MIT license, so you can improve it too.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Multiple themes</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">Multiple themes available for customizing your profile, so your audience can get a seamless experience.</p>
-                        </div>
-                    </div>
-                    <div className="xl:w-1/3 md:w-1/2 p-4">
-                        <div className="border dark:border-gray-600 border-gray-200 p-6 rounded-lg">
-                            <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                            </div>
-                            <h2 className="text-lg dark:text-gray-300 text-gray-900 font-medium title-font mb-2">Secure</h2>
-                            <p className="dark:text-gray-500 leading-relaxed text-base">Threadify believes in security is the priority, Thats why we never share your information with anyone else.</p>
-                        </div>
-                    </div>
+                        )
+                    })}
                 </div>
-                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started</button>
+                <div className="pb-8">
+                    <button className="flex mx-auto mt-10 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started</button>
+                </div>
             </div>
         </section>
     )
 }
 
-export default HomePage
+export default HomePage;

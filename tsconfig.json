@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Icons/FlagIcon.svg", "components/Icons/HeartBeatIcon.svg", "components/Icons/MoonIcon.svg", "components/Icons/ScissorsIcon.svg", "components/Icons/ShieldIcon.svg", "components/Icons/UserIcon.svg"],
   "exclude": ["node_modules"]
 }
