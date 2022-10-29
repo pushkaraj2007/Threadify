@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   images: {
     domains: ['api.iconify.design', "avatars.githubusercontent.com"],
   },
