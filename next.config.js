@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+const nextConfig = {
   images: {
-    domains: ['api.iconify.design'],
+    domains: ['api.iconify.design', "avatars.githubusercontent.com"],
   },
   reactStrictMode: true,
   swcMinify: true,
 };
+module.exports = nextConfig
+
