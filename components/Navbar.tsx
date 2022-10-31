@@ -15,14 +15,12 @@ const Navbar: NextPage = () => {
         <header className="text-gray-600 bg-gray-100 body-font dark:bg-gray-900">
             <div className="container flex flex-col flex-wrap items-center justify-between p-5 mx-auto md:flex-row">
                 <div className="flex flex-row items-center">
-                <Link href="/">
-                    <a className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0">
+                <Link className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0" href="/">
                         <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />
                         <span className="ml-3 text-xl">Threadify</span>
-                    </a>
                 </Link>
-                <Link href="/contributors">
-                    <a className="ml-5 hover:underline">Contributors</a>
+                <Link className="ml-5 hover:underline" href="/contributors">
+                    Contributors
                 </Link>
                 </div>
                 <div className="flex">
