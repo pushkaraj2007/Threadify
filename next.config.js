@@ -3,7 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["avatars.githubusercontent.com"]
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.twimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.githubusercontent.com'
+      }
+    ],
   }
 }
 
