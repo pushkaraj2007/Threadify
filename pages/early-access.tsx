@@ -3,7 +3,7 @@ import { GrMail, GrTwitter } from "react-icons/gr"
 
 const EarlyAccess: NextPage = () => {
     return(
-        <main className="h-[80vh] bg-gray-100 pt-4 dark:bg-gray-900 flex items-center justify-center text-gray-900 dark:text-gray-200">
+        <main className="h-[82vh] bg-gray-100 pt-4 dark:bg-gray-900 flex items-center justify-center text-gray-900 dark:text-gray-200">
             <div className="flex w-[100%] justify-center">
                 <div className="flex flex-col items-center">
                     <p className="text-xl font-bold">Be the first person to get updates about Threadify time to time</p>
