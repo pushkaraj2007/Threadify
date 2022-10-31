@@ -29,4 +29,4 @@ const EarlyAccess: NextPage = () => {
     )
 }
 
-export default EarlyAccess
+export default EarlyAccess;
