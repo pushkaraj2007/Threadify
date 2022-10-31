@@ -15,9 +15,11 @@ const Navbar: NextPage = () => {
         <header className="text-gray-600 bg-gray-100 body-font dark:bg-gray-900">
             <div className="container flex flex-col flex-wrap items-center justify-between p-5 mx-auto md:flex-row">
                 <div className="flex flex-row items-center">
-                    <Link className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0" href="/">
-                        <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />
-                        <span className="ml-3 text-xl">Threadify</span>
+                    <Link href="/">
+                        <div className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0">
+                            <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />
+                            <span className="ml-3 text-xl">Threadify</span>
+                        </div>
                     </Link>
                     <Link className="ml-5 hover:underline" href="/contributors">
                         Contributors
