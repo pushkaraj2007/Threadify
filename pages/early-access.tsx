@@ -27,6 +27,6 @@ const EarlyAccess: NextPage = () => {
             </div>            
         </main>
     )
-}
+} 
 
 export default EarlyAccess;
