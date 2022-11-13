@@ -16,23 +16,29 @@ const Navbar: NextPage = () => {
             <div className="container flex flex-col flex-wrap items-center justify-between p-5 mx-auto md:flex-row">
                 <div className="flex flex-row items-center">
                     <Link className="cursor-pointer" href="/">
-                        <div className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0">
-                            <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />
-                            <span className="ml-3 text-xl">Threadify</span>
-                        </div>
+                        <a href="/">
+                            <div className="flex items-center mb-4 font-medium text-gray-900 title-font dark:text-gray-300 md:mb-0">
+                                <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />
+                                <span className="ml-3 text-xl">Threadify</span>
+                            </div>
+                        </a>
                     </Link>
-                    <Link className="ml-5 hover:underline" href="/contributors">
-                        Contributors
+                    <Link href="/contributors">
+                        <a className="ml-5 hover:underline" href="/contributors">
+                            Contributors
+                        </a>
                     </Link>
                 </div>
                 <div className="flex">
                     <button className="mr-7" onClick={toggleTheme}> {theme === "light" ? <FaMoon className="text-xl text-gray-900" /> : <FaSun className="text-xl text-gray-300" />}</button>
                     <Link href='/early-access'>
-                        <button className="flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700">Sign up for early access
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
+                        <a href="/early-access">
+                            <button className="flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700">Sign up for early access
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </a>
                     </Link>
                 </div>
             </div>
