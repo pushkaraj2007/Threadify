@@ -71,7 +71,7 @@ const EarlyAccess: NextPage = () => {
                             <input className="bg-transparent w-72 border-b-2 pl-7 outline-none border-b-orange-400" id="twitterUsername" type="text" placeholder="Your Twitter Username" />
                         </div>
 
-                        <button className="mt-6 px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700" type="submit">Submit</button>
+                        <button className="mt-6 px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700" type="submit">Sign Up</button>
                     </form>
 
                 </div>
