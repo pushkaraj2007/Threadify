@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import { FaTwitter } from "react-icons/fa"
-import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const Dashboard: NextPage = () => {
@@ -27,7 +26,7 @@ const Dashboard: NextPage = () => {
 
             <div className="flex justify-center mt-5 w-[100%]">
                 <div className=" w-1/2">
-                    <p className="text-xl">Full-Stack Developer 👨‍💻 | Open source contributor | Currently working on http://threadify.vercel.app | Let's Connect 🤝</p>
+                    <p className="text-xl">Full-Stack Developer 👨‍💻 | Open source contributor | Currently working on http://threadify.vercel.app | Lets Connect 🤝</p>
                 </div>
             </div>
 
