@@ -59,7 +59,7 @@ const EarlyAccess: NextPage = () => {
         pauseOnHover
         theme="dark"
       />
-      <div className="flex w-[100%] justify-center">
+      <div className="flex w-full justify-center">
         <div className="flex flex-col items-center">
           <p className="text-xl text-center font-medium px-4">
             Be the first person to get updates about Threadify time to time
