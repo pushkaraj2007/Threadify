@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Dashboard: NextPage = () => {
   return (
-    <main className="bg-gray-100 pt-16 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
+    <main className=" h-[100vh] bg-gray-100 pt-16 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
       <div className="flex space-y-6 flex-col justify-center items-center">
         <div className=" flex items-center">
           <div className=" flex items-center flex-col">
