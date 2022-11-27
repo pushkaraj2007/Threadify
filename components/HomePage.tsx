@@ -1,8 +1,11 @@
 import { NextPage } from "next";
+import { useSession, signIn } from 'next-auth/react'
+import ProfileDropdown from "./ProfileDropdown";
 
 const HomePage: NextPage = () => {
     return (
         <section className="text-gray-600 body-font">
+            {/* <ProfileDropdown /> */}
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 dark:text-gray-200 text-gray-900">Never Lose Your Twitter Thread Again!</h1>
@@ -79,7 +82,7 @@ const HomePage: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started</button>
+                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={()=> signIn('twitter', { callbackUrl: 'http://localhost:3000/api/twitter/user' })}>Get Started</button>
             </div>
         </section>
     )

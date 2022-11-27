@@ -3,9 +3,12 @@ import Image from "next/image";
 import { useTheme } from "next-themes"
 import { FaMoon, FaSun } from "react-icons/fa"
 import Link from "next/link";
+import ProfileDropdown from "./ProfileDropdown";
+import { useSession, signIn } from 'next-auth/react'
 
 const Navbar: NextPage = () => {
     const { theme, setTheme } = useTheme()
+    const { data: session } = useSession()
 
     const toggleTheme = () => {
         setTheme(theme === 'light' ? "dark" : "light")
@@ -31,15 +34,21 @@ const Navbar: NextPage = () => {
                 </div>
                 <div className="flex">
                     <button className="mr-7" onClick={toggleTheme}> {theme === "light" ? <FaMoon className="text-xl text-gray-900" /> : <FaSun className="text-xl text-gray-300" />}</button>
-                    <Link href='/early-access'>
-                        <a>
-                            <button className="flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700">Sign up for early access
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                        </a>
-                    </Link>
+
+                    {session ?
+                        <ProfileDropdown />
+
+                        : <Link href='/early-access'>
+                            <a>
+                                <button className="flex items-center px-4 py-2 font-bold text-white transition-all bg-blue-500 rounded hover:bg-blue-700">Sign up for early access
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </Link>
+                    }
+
                 </div>
             </div>
         </header>
