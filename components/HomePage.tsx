@@ -82,7 +82,7 @@ const HomePage: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={()=> signIn('twitter', { callbackUrl: 'http://threadify.vercel.app/api/twitter/user' })}>Get Started</button>
+                <button className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onClick={()=> signIn('twitter', { callbackUrl: 'https://threadify.vercel.app/api/twitter/user' })}>Get Started</button>
             </div>
         </section>
     )
