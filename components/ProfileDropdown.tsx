@@ -55,12 +55,12 @@ const ProfileDropdown: NextPage = () => {
             <div ref={wrapperRef} className="dropdown-div hidden bg-black h-36 w-48 mt-12 rounded-lg shadow-xl shadow-gray-800 absolute text-white">
 
                 <Link href="/profile">
-                    <a href="/profile">
+                    <a>
                         <div className="h-1/3 flex items-center pl-2 cursor-pointer transition hover:bg-gray-800"><FaUser /> &nbsp; Profile</div>
                     </a>
                 </Link>
                 <Link href="/dashboard">
-                    <a href="/dashboard">
+                    <a>
                         <div className="h-1/3 flex items-center pl-2 cursor-pointer transition hover:bg-gray-800"><MdSpaceDashboard /> &nbsp; Dashboard</div>
                     </a>
                 </Link>
