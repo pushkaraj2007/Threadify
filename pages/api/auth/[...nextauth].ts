@@ -13,7 +13,7 @@ export default NextAuth({
     callbacks: {
         async jwt({ token, user, account = {}, profile, isNewUser }) {
 
-            console.log(user)
+            console.log(profile)
             // console.log(isNewUser)
             if (account?.provider && !token[account.provider]) {
                 token[account.provider] = {};
@@ -31,7 +31,16 @@ export default NextAuth({
                 token[account?.provider].accountId = user?.id;
             }
 
+            profile && (token.user = profile)
+
             return token
+        },
+
+        // @ts-ignore
+        async session({ session, token }){
+            // @ts-ignore
+            session.user = token.user
+            return session
         }
     }
 })
