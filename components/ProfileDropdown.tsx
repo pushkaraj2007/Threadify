@@ -51,7 +51,7 @@ const ProfileDropdown: NextPage = () => {
 
     return (
         <>
-            <Image className="cursor-pointer rounded-full" height={40} width={40} src={session?.user?.image as string} onClick={() => { handleProfileDropdownClick() }} alt="" />
+            <Image className="cursor-pointer rounded-full" height={40} width={40} src={session?.user?.data?.profile_image_url as string} onClick={() => { handleProfileDropdownClick() }} alt="" />
             <div ref={wrapperRef} className="dropdown-div hidden bg-black h-36 w-48 mt-12 rounded-lg shadow-xl shadow-gray-800 absolute text-white">
 
                 <Link href="/profile">
