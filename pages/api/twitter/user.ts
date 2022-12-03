@@ -29,15 +29,18 @@ export default async function user(
         console.log(registeredUser)
         if (registeredUser) {
             console.log('user exists already')
-            res.status(200).json({message: "User exists already"})
+            res.status(200).json(user)
         }
         else {
             await Users.create({
                 name: user?.data?.name,
                 username: user?.data?.username,
                 accountId: user?.data?.id,
-                profileImage: user?.data?.profile_image_url
+                profileImage: user?.data?.profile_image_url,
+                bio: user?.data?.description
             })
+
+            console.log(user?.data?.description)
 
             res.status(200).json(user)
         }

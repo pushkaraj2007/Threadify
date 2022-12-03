@@ -18,6 +18,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
+    bio: {
+        type: String,
+        required: true
+    },
     tweets: {
         type: Array,
         reuquired: true
