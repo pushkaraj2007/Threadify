@@ -2,9 +2,12 @@ import { NextPage } from "next";
 import { FaTwitter } from "react-icons/fa";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useSession } from 'next-auth/react'
 import Swal from 'sweetalert2'
 
 const Dashboard: NextPage = () => {
+
+  const { data: session } = useSession()
 
   async function handelTweetFetch(url: string) {
     try {
@@ -40,14 +43,14 @@ const Dashboard: NextPage = () => {
       <div className="flex space-y-6 flex-col justify-center items-center">
         <div className=" flex items-center">
           <div className=" flex items-center flex-col">
-            <h1 className="text-2xl md:text-3xl">Pushkaraj Kulkarni</h1>
-            <p className="text-base md:text-lg mt-1">@pushkaraj2007</p>
+            <h1 className="text-2xl md:text-3xl">{session?.user.data.name}</h1>
+            <p className="text-base md:text-lg mt-1">@{session?.user.data.username}</p>
           </div>
         </div>
 
         <div className="flex">
           <button className="transition-all duration-200 rounded-md p-2 hover:bg-[#c3cbd524]">
-            <a className="flex" href="https://twitter.com/pushkaraj2007">
+            <a className="flex" href={`https://twitter.com/${session?.user.data.username}`}>
               <FaTwitter className="text-2xl dark:text-gray-300" />
               <p className="ml-3 text-base font-semibold">Follow On Twitter</p>
             </a>
