@@ -15,7 +15,7 @@ const HomePage: NextPage = () => {
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col flex-wrap items-center w-full mb-20 text-center">
                     <h1 className="mb-2 text-2xl font-medium text-gray-900 sm:text-3xl title-font dark:text-gray-200">Never Lose Your Twitter Thread Again!</h1>
-                    <p className="w-full leading-relaxed text-gray-500 dark:text-gray-400 lg:w-1/2">Threadify helps you to manage and showcase all of your twitter threads at one place, with the simplicity and security.</p>
+                    <p className="w-full leading-relaxed text-gray-500 dark:text-gray-400 lg:w-1/2">Threadify helps you to manage and showcase all of your twitter threads at one place, with simplicity and security.</p>
                 </div>
                 <div className="flex flex-wrap flex-grow -m-4">
                     <Card
@@ -40,8 +40,8 @@ const HomePage: NextPage = () => {
                     />
                     <Card
                         path={<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>}
-                        title="Open Sourced"
-                        description="Threadify is open sourced and comes under MIT license, so you can improve it too."
+                        title="Open Source"
+                        description="Threadify is open source and comes under the MIT license, so you can improve it too."
                     />
                     <Card
                         path={<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>}
@@ -51,7 +51,7 @@ const HomePage: NextPage = () => {
                     <Card
                         path={<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>}
                         title="Secure"
-                        description="Threadify believes in security is the priority, Thats why we never share your information with anyone else."
+                        description="Threadify believes in security as its priority, that's why we never share your information with anyone else."
                     />
                 </div>
                 <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600" onClick={()=> signIn('twitter', { callbackUrl: 'http://localhost:3000/api/twitter/user' })}>Get Started</button>
