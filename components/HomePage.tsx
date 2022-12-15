@@ -15,9 +15,9 @@ const HomePage: NextPage = () => {
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col flex-wrap items-center w-full mb-20 text-center">
                     <h1 className="mb-2 text-2xl font-medium text-gray-900 sm:text-3xl title-font dark:text-gray-200">Never Lose Your Twitter Thread Again!</h1>
-                    <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">Threadify helps you to manage and showcase all of your twitter threads at one place, with the simplicity and security.</p>
+                    <p className="w-full leading-relaxed text-gray-500 dark:text-gray-400 lg:w-1/2">Threadify helps you to manage and showcase all of your twitter threads at one place, with the simplicity and security.</p>
                 </div>
-                <div className="flex flex-wrap -m-4">
+                <div className="flex flex-wrap flex-grow -m-4">
                     <Card
                         path={<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>}
                         title="Evergreen Threads"
@@ -71,8 +71,8 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement> & {
     ...props
 }) => {
     return (
-        <div className="p-4 xl:w-1/3 md:w-1/2" {...props}>
-            <div className="p-6 border border-gray-200 rounded-lg dark:border-gray-600">
+        <div className="p-4 xl:w-1/3 md:w-1/2 sm:max-md:min-w-full" {...props}>
+            <div className="p-6 min-h-full border border-gray-200 rounded-lg dark:border-gray-600">
                 <div className="inline-flex items-center justify-center w-10 h-10 mb-4 text-indigo-500 bg-indigo-100 rounded-full">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                         {path}
