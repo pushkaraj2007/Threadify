@@ -72,16 +72,16 @@ const Card: React.FC<React.HTMLAttributes<HTMLDivElement> & {
 }) => {
     return (
         <div className="p-4 xl:w-1/3 md:w-1/2 sm:max-md:min-w-full" {...props}>
-            <div className="p-6 min-h-full border border-gray-200 rounded-lg dark:border-gray-600">
+            <div className="p-6 min-h-full border border-gray-300 rounded-lg dark:border-gray-600">
                 <div className="inline-flex items-center justify-center w-10 h-10 mb-4 text-indigo-500 bg-indigo-100 rounded-full">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-6 h-6" viewBox="0 0 24 24">
                         {path}
                     </svg>
                 </div>
-                <h2 className="mb-2 text-lg font-medium text-gray-900 dark:text-gray-300 title-font">
+                <h2 className="mb-2 text-lg font-medium text-gray-900 dark:text-gray-200 title-font">
                     {title}
                 </h2>
-                <p className="text-base leading-relaxed dark:text-gray-500">
+                <p className="text-base leading-relaxed dark:text-gray-400">
                     {description}
                 </p>
             </div>
