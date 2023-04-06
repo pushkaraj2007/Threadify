@@ -10,7 +10,7 @@ const Footer: NextPage = () => {
                     <Image width={40} height={40} src="/logo.svg" className="h-12 filter dark:invert" alt="" />                  
                     <span className="ml-3 text-xl">Threadify</span>
                 </a>
-                <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">© 2022 Threadify —
+                <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0">© {new Date().getFullYear()} Threadify —
                     <a href="https://twitter.com/pushkaraj2007" className="ml-1 text-gray-600" rel="noopener noreferrer" target="_blank">Pushkaraj Kulkarni</a>
                 </p>
                 <span className="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
