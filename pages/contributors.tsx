@@ -18,7 +18,7 @@ const ContributorsPage = ({contributors,temp} : ContributorsPageProps)=>{
         console.log(temp)
     },[])
     return(
-        <div className="h-screen bg-gray-100 dark:bg-gray-900 px-14" >
+        <div className="bg-gray-100 dark:bg-gray-900 px-14">
             <h3 className=" text-center font-bold text-2xl dark:text-gray-200 text-gray-900">Threadify is possible because of all these contributors!</h3>
             <div className="mt-16 grid gap-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 {contributors && contributors.map((contributor,i) => <ContributorCard key={i} contributor={contributor} />)}
@@ -32,9 +32,9 @@ export const getStaticProps = async()=>{
     const githubApiKey = process.env.GITHUB_API_KEY
     
     let data = null
-    const res = await fetch(`https://api.github.com/repos/${githubUser}/Supabase-Tutorial/collaborators`,{headers:{"Accept":"Accept: application/vnd.github+json","Authorization":`Bearer ${githubApiKey}`}})
+    const res = await fetch(`https://api.github.com/repos/${githubUser}/Threadify/contributors`,{headers:{"Accept":"Accept: application/vnd.github+json","Authorization":`Bearer ${githubApiKey}`}})
     data = await res.json()
-    let temp: any;
+    let temp: any = null;
     if(data.length == undefined){
         temp = data
         data = []
