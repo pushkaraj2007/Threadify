@@ -43,5 +43,9 @@ export const getStaticProps = async()=>{
         props : {contributors: data,temp}
     }
 }
+<>
+  <img src="https://contrib.rocks/image?repo=pushkaraj2007/Threadify" />
+  <img />
+</>
 
 export default ContributorsPage
