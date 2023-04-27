@@ -12,10 +12,10 @@ const EarlyAccess: NextPage = () => {
       document.getElementById("twitterUsername") as HTMLInputElement
     ).value.replace(/\s/g, "");
 
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email)) {
       return (
         console.log(
-          !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+          !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email)
         ),
         toast.error(
           "Invalid email address, please try again with different email"
