@@ -18,7 +18,7 @@ const ContributorsPage = ({contributors,temp} : ContributorsPageProps)=>{
         console.log(temp)
     },[])
     return(
-        <div className="bg-gray-100 dark:bg-gray-900 px-14">
+        <div className="bg-gray-100 dark:bg-gray-900 px-14 info">
             <h3 className=" text-center font-bold text-2xl dark:text-gray-200 text-gray-900">Threadify is possible because of all these contributors!</h3>
             <div className="mt-16 grid gap-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 {contributors && contributors.map((contributor,i) => <ContributorCard key={i} contributor={contributor} />)}

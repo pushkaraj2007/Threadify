@@ -19,11 +19,36 @@ a {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media only screen and (max-width: 600px) {
+  .contributors{
+    text-align: center;
+    align-items: center;
+    margin: 1rem; 
+    margin-left: 1.4rem;
   }
-  body {
-    background: black;
+  .logoDiv{
+    text-align: center;
+    align-items: center;
+    gap: 0.2rem;
   }
-} */
+  .signUpDiv{
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+    gap: 0.4rem;
+    flex-direction: row-reverse;
+  }
+  .topProfileDiv{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .signUpDiv button{
+    margin-left: 2rem;
+  }
+
+  
+
+  .info{
+    padding-top: 3rem;
+  }
+}
