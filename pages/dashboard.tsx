@@ -51,7 +51,7 @@ const Dashboard: NextPage = () => {
         <div className="flex">
           <button className="transition-all duration-200 rounded-md p-2 hover:bg-[#c3cbd524]">
             <a className="flex" href={`https://twitter.com/${session?.user.data.username}`}>
-              <FaTwitter className="text-2xl dark:text-gray-300" />
+              <FaTwitter className="text-2xl dark:text-gray-350" />
               <p className="ml-3 text-base font-semibold">Follow On Twitter</p>
             </a>
           </button>
@@ -81,7 +81,7 @@ const Dashboard: NextPage = () => {
               if (result.isConfirmed) {
                 Swal.fire(
                   'Saved',
-                  'Your Tweet has been saved successfully',
+                  'Your Tweet has been saved successfully!',
                   'success'
                 )
               }
@@ -93,7 +93,7 @@ const Dashboard: NextPage = () => {
         </div>
       </div>
 
-      <div className="container  flex flex-wrap w-full px-3 justify-center">
+      <div className="container flex flex-wrap w-full px-3 align-items">
         <div className="flex sm:w-auto w-full flex-wrap">
           <div className="w-full p-4 flex items-center gap-4 tweets-container">
             <div className="border w-96  max-w-full border-gray-500 p-6 rounded-lg transition hover:border-gray-200">
@@ -111,12 +111,12 @@ const Dashboard: NextPage = () => {
                 </h2>
               </div>
               <p className="leading-relaxed text-base">
-                What is open source? 🤔
+              🤔What is open source? 🤔
                 <br /> <br />
-                Thread 🧵:
+                A Thread 🧵:
               </p>
             </div>
-            <div className="border w-96  max-w-full border-gray-500 p-6 rounded-lg transition hover:border-gray-200">
+            <div className="border w-96  max-w-full border-gray-400 p-6 rounded-lg transition hover:border-gray-200">
               <div className="flex h-10 space-x-2 items-center rounded-full mb-4">
                 {/* <img className="rounded-full" src={session?.user?.image} alt="" /> */}
                 <Image
